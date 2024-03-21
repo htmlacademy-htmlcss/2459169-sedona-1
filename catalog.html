@@ -4,6 +4,7 @@
    <head>
       <meta charset="UTF-8">
       <title>Гостиницы Седоны</title>
+      <link rel="stylesheet" href="styles/styles.css">
    </head>
 
    <body>
@@ -40,10 +41,11 @@
                   </a>
                </li>
             </ul>
-            <button class="button">Хочу сюда</button>
+            <button class="button">Хочу сюда!</button>
          </nav>
       </header>
       <main class="main-inner">
+        <div class="inner-background">
          <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ol class="breadcrumbs">
@@ -59,7 +61,7 @@
             <h2 class="visually-hidden">Фильтры</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Инфраструктура</legend>
+                  <legend class="catalog-filter-title">Инфраструктура:</legend>
                   <ul class="catalog-filter-list">
                      <li class="catalog-filter-item">
                         <label class="control">
@@ -104,30 +106,31 @@
                      </li>
                   </ul>
                </fieldset>
-               <button class="button" type="submit">Применить</button>
-               <button class="button" type="reset">Сбросить</button>
+               <button class="button-submit" type="submit">Применить</button>
+               <button class="button-reset" type="reset">Сбросить</button>
             </form>
          </section>
+        </div>
          <section>
-            <h2>Найдено Гостиниц: 38</h2>
+            <h2 class="search-hotel">Найдено Гостиниц: 38</h2>
             <select class="select-control" aria-label="Сортировка">
                <option value="popular">Сначала популярное</option>
                <option value="cheap">Сначала дешёвое</option>
                <option value="expensive">Сначала дорогое</option>
             </select>
-            <ul>
+            <ul class="list-display">
                <li>
-                  <a class="button" href="#">
+                  <a class="button-display" href="#">
                      <span class="visually-hidden">Показать карточки</span>
                   </a>
                </li>
                <li>
-                  <a class="button" href="#">
+                  <a class="button-display" href="#">
                      <span class="visually-hidden">Показать с описанием</span>
                   </a>
                </li>
                <li>
-                  <a class="button" href="#">
+                  <a class="button-display" href="#">
                      <span class="visually-hidden">Показать список</span>
                   </a>
                </li>
@@ -141,7 +144,7 @@
                   <p>Гостиница</p>
                   <p>От 4000 ₽</p>
                   <a class="product-card-button button" href="#">Подробнее</a>
-                  <button type="submit">Избранное</button>
+                  <button class="favourites" type="submit">В Избранное</button>
                   <span class="visually-hidden">Звезды</span>
                   <p>Рейтинг</p>
                </li>
@@ -150,10 +153,10 @@
                      <img class="product-card-image" src="images/catalog/villas-at-poco-diablo.jpg" alt="Villas at Poco Diablo" width="300" height="212">
                      <h3 class="product-card-title">Villas at Poco Diablo</h3>
                   </a>
-                  <p>Гостиница</p>
-                  <p>От 5000 ₽</p>
+                  <p class="product-discription">Гостиница</p>
+                  <p class="product-discription">От 5000 ₽</p>
                   <a class="product-card-button button" href="#">Подробнее</a>
-                  <button type="submit">Избранное</button>
+                  <button class="favourites added" type="submit">В Избранном</button>
                   <span class="visually-hidden">Звезды</span>
                   <p>Рейтинг</p>
                </li>
@@ -162,10 +165,10 @@
                      <img class="product-card-image" src="images/catalog/desert-quail-inn.jpg" alt="Desert Quail Inn" width="300" height="212">
                      <h3 class="product-card-title">Desert Quail Inn</h3>
                   </a>
-                  <p>Гостиница</p>
-                  <p>От 2500 ₽</p>
+                  <p class="product-discription">Гостиница</p>
+                  <p class="product-discription">От 2500 ₽</p>
                   <a class="product-card-button button" href="#">Подробнее</a>
-                  <button type="submit">Избранное</button>
+                  <button class="favourites" type="submit">В Избранное</button>
                   <span class="visually-hidden">Звезды</span>
                   <p>Рейтинг</p>
                </li>
@@ -174,10 +177,10 @@
                      <img class="product-card-image" src="images/catalog/greentree-inn.jpg" alt="GreenTree Inn" width="300" height="212">
                      <h3 class="product-card-title">GreenTree Inn</h3>
                   </a>
-                  <p>Гостиница</p>
-                  <p>От 1500 ₽</p>
+                  <p class="product-discription">Гостиница</p>
+                  <p class="product-discription">От 1500 ₽</p>
                   <a class="product-card-button button" href="#">Подробнее</a>
-                  <button type="submit">Избранное</button>
+                  <button class="favourites" type="submit"> В Избранное</button>
                   <span class="visually-hidden">Звезды</span>
                   <p>Рейтинг</p>
                </li>
@@ -204,8 +207,8 @@
             </ul>
          </section>
          <section class="newsletter-inner">
-            <h2>Подпишитесь на рассылку</h2>
-            <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <h2 class="newsletter-inner-title">Подпишитесь на рассылку</h2>
+            <p class="newsletter-inner-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
                <label for="newsletter-email">Email</label>
                <input type="email" name="newsletter-email" placeholder="Ваш e-mail" id="newsletter-email">
@@ -233,7 +236,7 @@
                </a>
             </li>
          </ul>
-         <a href="tel:+78121212">+7 (812) 812-12-12</a>
+         <a class="phone" href="tel:+78121212">+7 (812) 812-12-12</a>
          <a href="https://htmlacademy.ru/">
             <img src="images/footer/html-academy.svg" alt="Логотип HtmlAcademy">
          </a>
