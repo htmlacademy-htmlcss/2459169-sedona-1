@@ -11,7 +11,7 @@
       <header class="main-header">
          <nav class="navigation">
             <a class="navigation-logo" href="index.html">
-               <img class="main-header-logo" src="images/header/sedona-logo.png" alt="Логотип Седона" width="140" height="70">
+               <img class="main-header-logo" src="images/header/sedona-logo.png" alt="Логотип Седона." width="140" height="70">
             </a>
             <ul class="navigation-list">
                <li class="navigation-item">
@@ -107,40 +107,43 @@
                       </li>
                    </ul>
                 </fieldset>
-                <button class="button-submit" type="submit">Применить</button>
-                <button class="button-reset" type="reset">Сбросить</button>
+                <div class="button-form-filter">
+                  <button class="button-submit" type="submit">Применить</button>
+                  <button class="button-reset" type="reset">Сбросить</button>
+                </div>
              </form>
            </section>
          </div>
-          <section class="display-menu">
-             <h2 class="search-hotel">Найдено Гостиниц: 38</h2>
-             <select class="select-control" aria-label="Сортировка">
+         <div class="sorting-container">
+            <h2 class="search-hotel">Найдено Гостиниц: 38</h2>
+            <select class="select-control" aria-label="Сортировка">
                <option value="popular">Сначала популярное</option>
                <option value="cheap">Сначала дешёвое</option>
                <option value="expensive">Сначала дорогое</option>
-             </select>
-             <ul class="list-display">
-               <li>
-                  <a class="button-display" href="#">
+            </select>
+            <ul class="list-display">
+               <li class="item-display">
+                  <a class="button-display button-display-current" href="#">
                      <span class="visually-hidden">Показать карточки</span>
                   </a>
                </li>
-               <li>
+               <li class="item-display">
                   <a class="button-display" href="#">
                      <span class="visually-hidden">Показать с описанием</span>
                   </a>
                </li>
-               <li>
+               <li class="item-display">
                   <a class="button-display" href="#">
                      <span class="visually-hidden">Показать список</span>
                   </a>
                </li>
-             </ul>
-             <div class="product-column">
+            </ul>
+         </div>
+         <div class="product-column">
                <ul class="product-list">
                <li class="product-card">
                   <a class="product-card-link" href="product.html">
-                     <img class="product-card-image" src="images/catalog/amara-resort-&-spa.jpg" alt="Amara Resort & Spa" width="300" height="212">
+                     <img class="product-card-image" src="images/catalog/amara-resort-&-spa.jpg" alt="Amara Resort & Spa." width="300" height="212">
                      <h3 class="product-card-title">Amara Resort & Spa</h3>
                   </a>
                   <p>Гостиница</p>
@@ -152,7 +155,7 @@
                </li>
                <li class="product-card">
                   <a class="product-card-link" href="product.html">
-                     <img class="product-card-image" src="images/catalog/villas-at-poco-diablo.jpg" alt="Villas at Poco Diablo" width="300" height="212">
+                     <img class="product-card-image" src="images/catalog/villas-at-poco-diablo.jpg" alt="Villas at Poco Diablo." width="300" height="212">
                      <h3 class="product-card-title">Villas at Poco Diablo</h3>
                   </a>
                   <p class="product-discription">Гостиница</p>
@@ -164,7 +167,7 @@
                </li>
                <li class="product-card">
                   <a class="product-card-link" href="product.html">
-                     <img class="product-card-image" src="images/catalog/desert-quail-inn.jpg" alt="Desert Quail Inn" width="300" height="212">
+                     <img class="product-card-image" src="images/catalog/desert-quail-inn.jpg" alt="Desert Quail Inn." width="300" height="212">
                      <h3 class="product-card-title">Desert Quail Inn</h3>
                   </a>
                   <p class="product-discription">Гостиница</p>
@@ -176,7 +179,7 @@
                </li>
                <li class="product-card">
                   <a class="product-card-link" href="product.html">
-                     <img class="product-card-image" src="images/catalog/greentree-inn.jpg" alt="GreenTree Inn" width="300" height="212">
+                     <img class="product-card-image" src="images/catalog/greentree-inn.jpg" alt="GreenTree Inn." width="300" height="212">
                      <h3 class="product-card-title">GreenTree Inn</h3>
                   </a>
                   <p class="product-discription">Гостиница</p>
@@ -207,9 +210,9 @@
                   <a class="pagination-link pagination-next" href="#">10</a>
                </li>
                </ul>
-             </div>
-          </section>
-          <section class="newsletter-inner">
+         </div>
+         <section class="newsletter-inner">
+           <div class="newsletter-container">
              <h2 class="newsletter-inner-title">Подпишитесь на рассылку</h2>
              <p class="newsletter-inner-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
              <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -219,7 +222,8 @@
                    Подписаться
                 </button>
              </form>
-          </section>
+           </div>
+         </section>
         </div>
       </main>
       <footer>
@@ -242,7 +246,7 @@
             </li>
          </ul>
          <a class="phone" href="tel:+78121212">+7 (812) 812-12-12</a>
-         <a href="https://htmlacademy.ru/">
+         <a class="footer-logo" href="https://htmlacademy.ru/">
             <img src="images/footer/html-academy.svg" alt="Логотип HtmlAcademy">
          </a>
         </div>
