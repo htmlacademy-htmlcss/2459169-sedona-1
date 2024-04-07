@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-   <head>
-      <meta charset="UTF-8">
-      <title>Гостиницы Седоны</title>
-      <link rel="stylesheet" href="styles/styles.css">
-   </head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Гостиницы Седоны</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
 
-   <body>
-      <header class="main-header">
-         <nav class="navigation">
-            <a class="navigation-logo" href="index.html">
-               <img class="main-header-logo" src="images/header/sedona-logo.png" alt="Логотип Седона." width="140" height="70">
+  <body>
+    <header class="main-header">
+      <nav class="navigation">
+        <a class="navigation-logo" href="index.html">
+          <img class="main-header-logo" src="images/header/sedona-logo.png" alt="Логотип Седона." width="140" height="70">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">
+                Поиск
+              </span>
             </a>
-            <ul class="navigation-list">
-               <li class="navigation-item">
-                  <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
-               </li>
-               <li class="navigation-item">
-                  <a class="navigation-link" href="#">О Седоне</a>
-               </li>
-               <li class="navigation-item">
-                  <a class="navigation-link" href="catalog.html">Гостиницы</a>
-               </li>
-            </ul>
-            <ul class="navigation-list navigation-user">
-               <li class="navigation-item">
-                  <a class="navigation-link" href="#">
-                     <span class="visually-hidden">
-                        Поиск
-                     </span>
-                  </a>
-               </li>
-               <li class="navigation-item">
-                  <a class="navigation-link" href="#">
-                     <span class="visually-hidden">
-                        Избранное
-                     </span>
-                     <span>12</span>
-                  </a>
-               </li>
-            </ul>
-            <button class="button">Хочу сюда!</button>
-         </nav>
-      </header>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">
+                Избранное
+              </span>
+              <span>12</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-button" href="#">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
       <main class="main-inner main-container">
         <div class="page-container">
          <div class="inner-background">
@@ -214,7 +216,7 @@
          <section class="newsletter-inner">
            <div class="newsletter-container">
              <h2 class="newsletter-inner-title">Подпишитесь на рассылку</h2>
-             <p class="newsletter-inner-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
+             <p class="newsletter-inner-discription">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
              <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label for="newsletter-email">Email</label>
                 <input type="email" name="newsletter-email" placeholder="Ваш e-mail" id="newsletter-email">
@@ -231,17 +233,17 @@
          <ul class="footer-social-list">
             <li class="footer-social-item">
                <a class="button-social" href="https://vk.com/htmlacademy">
-                  <span>В контакте</span>
+                  <span class="visually-hidden">В контакте</span>
                </a>
             </li>
             <li class="footer-social-item">
                <a class="button-social" href="https://t.me/htmlacademy">
-                  <span>Телеграм</span>
+                  <span class="visually-hidden">Телеграм</span>
                </a>
             </li>
             <li class="footer-social-item">
                <a class="button-social" href="https://www.youtube.com/user/htmlacademyru">
-                  <span>YouTube</span>
+                  <span class="visually-hidden">YouTube</span>
                </a>
             </li>
          </ul>
@@ -251,6 +253,6 @@
          </a>
         </div>
       </footer>
-   </body>
+  </body>
 
 </html>
