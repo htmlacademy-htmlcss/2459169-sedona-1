@@ -21,12 +21,13 @@ html{
 body{
    display: flex;
    flex-direction: column;
+   width: 1280px;
+   background-color: #f2f2f2;
    min-height: 100%;
-   margin: 0;
+   margin: 0 auto;
    font-family: "PT sans", "Arial", sans-serif;
    font-size: 18px;
    line-height: 21px;
-   background-color: #ffffff;
    color: #000000;
 
 }
@@ -43,11 +44,21 @@ body{
 }
 
 /*header*/
+.main-header{
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
 .navigation{
   display: flex;
   width: 1200px;
   margin: 0 auto;
   align-items: center;
+}
+
+.main-header-logo{
+  display:block;
 }
 
 .navigation-list{
@@ -72,9 +83,10 @@ body{
 }
 
 .navigation-logo{
-  margin-left: 70px;
+  margin-left: 64px;
   margin-right: 30px;
   width: 140px;
+  position: relative; top: 6px;
 }
 
 .navigation-link{
@@ -89,6 +101,7 @@ body{
 }
 
 .navigation-button {
+  font-family: "PT sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -104,6 +117,7 @@ body{
 }
 
 .button{
+  font-family: "PT sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -119,6 +133,9 @@ body{
 /*main*/
 .main-container{
   flex-grow: 1;
+  background-color: #ffffff;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .page-container{
@@ -308,6 +325,12 @@ body{
 }
 
 .search-button{
+  font-family: "PT sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
   padding: 8px 50px;
 }
 
@@ -346,6 +369,7 @@ body{
 }
 
 .newsletter-button{
+  font-family: "PT sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -359,6 +383,11 @@ body{
 }
 
 /*footer*/
+.page-footer{
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .footer-container{
   display: flex;
   width: 1200px;
@@ -366,6 +395,7 @@ body{
   padding-top: 40px;
   padding-bottom: 30px;
   align-items: center;
+  background-color: #ffffff;
 
 }
 
@@ -456,6 +486,7 @@ body{
 }
 
 .breadcrumbs-link{
+  font-family: "PT sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -498,6 +529,7 @@ body{
 }
 
 .button-submit{
+  font-family: "PT sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -512,6 +544,7 @@ body{
 }
 
 .button-reset{
+  font-family: "PT sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 125%;
@@ -576,13 +609,38 @@ body{
 /*product*/
 .product-column{
   width: 1060px;
+  margin: 0 auto;
 }
 
 .product-list{
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
+
+.product-card{
+  width: 340px;
+  margin: 20px auto;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
+
+.product-card-container{
+  width: 300px;
+  margin: 20px auto;
+}
+
+.product-card-content{
+  display: grid;
+  grid-template-columns: 140px 140px;
+  row-gap: 16px;
+  column-gap: 20px;
+  justify-content: space-between;
+}
+
 
 .product-card-link{
   font-weight: 700;
@@ -592,16 +650,34 @@ body{
   text-decoration-line: none;
 }
 
-.product-description{
+.product-card-image{
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.product-card-title{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.product-discription{
+  margin: 0;
   font-weight: 400;
   color:#333333;
 }
 
+.product-discription-price{
+  text-align: end;
+}
+
 .product-card-button{
+  padding: 8px 26px;
   text-decoration-line: none;
 }
 
 .favourites{
+  font-family: "PT sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -610,12 +686,26 @@ body{
   color: #ffffff;
   background-color: #82b3d3;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 20px;
   border: none;
 }
 
 .added{
   background-color: #7db54f;
+  padding: 8px 18px;
+}
+
+.product-rating{
+  width: 95px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 9px 22px 8px 23px;
 }
 
 /*pagination*/
@@ -625,11 +715,11 @@ body{
   padding: 0;
   list-style: none;
   margin-top: 80px;
-  margin-left: 70px;
   margin-bottom: 60px;
 }
 
 .pagination-link{
+  font-family: "PT sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -640,6 +730,11 @@ body{
   padding: 12px 24px;
   margin-right: 8px;
   border-radius: 4px;
+}
+
+.pagination-ellipsis{
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .pagination-current{
